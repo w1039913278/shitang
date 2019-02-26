@@ -1,0 +1,254 @@
+.box {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  background: #F2F2F2;
+}
+.shopcon {
+  position: relative;
+  height: 610px;
+}
+.shopcon .list {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.shopcon .list h2 {
+  position: relative;
+  font-size: 20px;
+}
+.shopcon .listone {
+  top: 30px;
+  left: 25px;
+  height: 250px;
+  width: 370px;
+}
+.shopcon .listone h2 {
+  top: 30px;
+  left: 30px;
+}
+.shopcon .listone h3 {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  color: red;
+  font-size: 22px;
+}
+.shopcon .listone .mychatone {
+  position: absolute;
+  left: -20px;
+  top: 50px;
+  width: 450px;
+  height: 200px;
+}
+.shopcon .listone .onetime {
+  position: absolute;
+  left: 41px;
+  bottom: 50px;
+}
+.shopcon .listone .onetime p {
+  position: absolute;
+  white-space: nowrap;
+}
+.shopcon .listtwo {
+  top: 30px;
+  left: 420px;
+  height: 250px;
+  width: 370px;
+}
+.shopcon .listtwo h2 {
+  top: 30px;
+  left: 30px;
+}
+.shopcon .listtwo .twotitle {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+.shopcon .listtwo .twotitle p {
+  position: absolute;
+  white-space: nowrap;
+}
+.shopcon .listtwo .twotitle #twolistone {
+  width: 200px;
+  height: 80px;
+}
+.shopcon .listtwo .twotitle #twolisttwo {
+  width: 200px;
+  height: 80px;
+}
+.shopcon .listtwo .twotitle #twolistthree {
+  width: 200px;
+  height: 80px;
+}
+.shopcon .listtwo .twotitle #twolistfour {
+  width: 200px;
+  height: 80px;
+}
+.shopcon .listtwo .twoone {
+  top: 100px;
+}
+.shopcon .listtwo .twotwo {
+  top: 130px;
+}
+.shopcon .listtwo .twothree {
+  top: 160px;
+}
+.shopcon .listtwo .twofour {
+  top: 190px;
+}
+.shopcon .listthree {
+  top: 30px;
+  left: 810px;
+  height: 250px;
+  width: 300px;
+}
+.shopcon .listthree h2 {
+  top: 30px;
+  left: 30px;
+}
+.shopcon .listthree .threefig {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 300px;
+  height: 220px;
+}
+.shopcon .listfour {
+  top: 310px;
+  left: 30px;
+  height: 280px;
+  width: 550px;
+}
+.shopcon .listfour h2 {
+  top: 30px;
+  left: 30px;
+}
+.shopcon .listfour .fourtitle {
+  position: relative;
+  left: 30px;
+  top: 45px;
+}
+.shopcon .listfour .fourtitle p {
+  position: absolute;
+  color: gray;
+  font-size: 16px;
+}
+.shopcon .listfour .fourconone {
+  top: 90px;
+}
+.shopcon .listfour .fourcontwo {
+  top: 130px;
+}
+.shopcon .listfour .fourconthree {
+  top: 170px;
+}
+.shopcon .listfour .fourconfour {
+  top: 210px;
+}
+.shopcon .listfive {
+  position: relative;
+  top: 310px;
+  left: 600px;
+  height: 280px;
+  width: 220px;
+}
+.shopcon .listfive h2 {
+  top: 30px;
+  left: 30px;
+}
+.shopcon .listfive h3 {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  width: 140px;
+  height: 25px;
+  border: 1px solid #A2A2A2;
+  display: flex;
+  align-items: center;
+}
+.shopcon .listfive .operator {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #A2A2A2;
+  border-top: 1px solid #A2A2A2;
+}
+.shopcon .listfive .operator span {
+  padding: 5px 0 3px 0;
+  width: 40px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+.shopcon .listfive .number {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+}
+.shopcon .listfive .number .numberline {
+  display: flex;
+  height: 35px;
+}
+.shopcon .listfive .number .numberline p {
+  width: 93px;
+  height: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #A2A2A2;
+  border-right: 1px solid #A2A2A2;
+}
+.shopcon .listfive .number .numberline .number-mid {
+  width: 100px;
+}
+.shopcon .listfive .number .numberline .number-right {
+  width: 96px;
+  border-right: none;
+}
+.shopcon .listfive .number .numberline .number-last {
+  border-bottom: none;
+}
+.shopcon .listfive .number .lastline {
+  height: 35px;
+}
+.shopcon .listsix {
+  top: 310px;
+  left: 840px;
+  height: 280px;
+  width: 270px;
+}
+.shopcon .listsix h2 {
+  top: 30px;
+  left: 30px;
+}
+.shopcon .listsix .listsixcon {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.shopcon .listsix .listsixcon li {
+  margin-top: 25px;
+  color: gray;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.shopcon .listsix .listitem {
+  position: absolute;
+  top: 38px;
+  left: 135px;
+}
+.shopcon .listsix .listitem li {
+  margin-top: 27px;
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 100;
+}
+/*# sourceMappingURL=shop.css.map */

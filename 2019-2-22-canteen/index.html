@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>食堂系统</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="less/index.css">
+</head>
+<body>
+<!--左侧导航栏-->
+<div class="layui-side layui-bg-black left_nav_width" style="z-index: 9999">
+    <ul class="layui-nav layui-nav-tree left_nav_width" lay-filter="test"
+        style="background-color: transparent;cursor: pointer">
+        <li class="layui-nav-itemed" style="margin-top:32px;margin-left: 20px">
+            <a>
+                <i class="layui-icon left_icon" style="font-size: 18px">&#xe668;</i>
+                <cite class="left_icon" style="font-size: 18px">食堂后台管理系统</cite>
+            </a>
+        </li>
+        <li class="layui-nav-item back" style="margin-top: 138px">
+            <a class="can changone">
+                <i class="layui-icon left_icon colo">&#xe63c;</i>
+                <cite class="left_icon colo">今日采购</cite></a></li>
+        <li class="layui-nav-item " style="margin-top:30px"><a class="can">
+            <i class="layui-icon left_icon">&#xe62c;</i>
+            <cite class="left_icon">价格走势</cite></a></li>
+        <li class="layui-nav-item " style="margin-top: 30px"><a class="can">
+            <i class="layui-icon left_icon cont">&#xe657;</i>
+            <cite class="left_icon">食材采购</cite></a></li>
+        <li class="layui-nav-item " style="margin-top: 30px">
+            <a class="can">
+                <i class="layui-icon icon_other left_icon">&#xe629;</i>
+                <cite class="left_icon">收支统计</cite></a>
+        </li>
+    </ul>
+</div>
+<!--右侧内容头部-->
+<div class="header">
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+            <a href="javascript:;">
+                <img src="img/消息.jpg" alt="" style="height: 34px; width: 31px">
+                <span></span>
+            </a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="" style="color: black">
+                <img src="img/2121.jpg" style="width: 50px;height: 50px;margin-right: 10px">
+                后勤陈经理
+                <img src="img/jian.jpg" alt="" class="updown"></a>
+            <dl class="layui-nav-child listcon">
+                <dd><a href="javascript:;">切换</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd id="sign"><a href="javascript:;">退出</a></dd>
+            </dl>
+        </li>
+    </ul>
+    <p class="act">采购总览</p>
+    <p>价格走势汇总</p>
+    <p>食材种类购物汇总</p>
+    <p>收支统计表</p>
+</div>
+<!--右侧内容-->
+<div class="layui-body content">
+    <div class=" layui-body  cont show ">
+        <iframe src="purch.html"  width="100%" height="623px" marginwidth="0"
+                marginheight="0" hspace=0 vspace=0 frameborder="0" >
+        </iframe>
+    </div>
+    <div class=" layui-body  cont">
+        <iframe src="price_trend%20.html"  width="100%" height="623px" marginwidth="0"
+                marginheight="0" hspace=0 vspace=0 frameborder="0" >
+        </iframe>
+    </div>
+    <div class=" layui-body  cont">
+        <iframe src="shop.html" width="100%" height="623px" marginwidth="0"
+                marginheight="0" hspace=0 vspace=0 frameborder="0" >
+        </iframe>
+    </div>
+    <div class="layui-body  cont">
+        <iframe src="revenue.html" width="100%" height="623px" marginwidth="0"
+                marginheight="0"  frameborder="0" >
+        </iframe>
+    </div>
+</div>
+
+
+<script src="layui/layui.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(".layui-nav-item").click(function(){
+        // console.log($(this).index());
+        $(this).addClass("back").siblings().removeClass("back");
+        $(this).find("cite").addClass("colo").siblings().find("cite").removeClass("colo");
+        $(this).find("i").addClass("colo").siblings().find("cite").removeClass("colo");
+        $(".header").find("p").eq($(this).index()-1).addClass("act").siblings("p").removeClass("act");
+        $(".content>div").eq($(this).index()-1).addClass("show").siblings().removeClass("show");
+    })
+
+    $("#sign").click(function(){
+        window.open("login.html","_self")
+    })
+</script>
+</body>
+</html>

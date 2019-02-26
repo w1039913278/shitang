@@ -1,0 +1,163 @@
+.box{
+	position: relative;
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+	background: url(../img/123.jpg);
+	background-size: 100% 100%;
+	.landing{
+		position: absolute;
+		top: 100px;
+		right: 286px;
+		width: 450px;
+		height: 500px;
+		background-color: rgba(255,255,255,.8);
+		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+		.landing-con{
+			&>p{
+				margin-top: 87px;
+				height: 37px;
+				font-size: 28px;
+				font-weight: 500;
+			}
+			.usename{
+				position: relative;
+				margin-top: 60px;
+				height: 56px;
+				width: 340px;
+				border-bottom: 1px solid gray;
+				img{
+					width: 28px;
+					height: 28px;
+				}
+				input{
+					position: absolute;
+					top: 5px;
+					left: 33px;
+					width: 300px;
+					outline: none;
+					border: none;
+					background-color: rgba(255,255,255,0);
+					font-size: 18px;
+				}
+			}
+			.usecode{
+				position: relative;
+				margin-top: 30px;
+				height: 56px;
+				width: 340px;
+				border-bottom: 1px solid gray;
+				img{
+					width: 28px;
+					height: 28px;
+				}
+				input{
+					position: absolute;
+					top: 5px;
+					left: 33px;
+					width: 300px;
+					outline: none;
+					border: none;
+					background-color: rgba(255,255,255,0);
+					font-size: 18px;
+				}
+			}
+			.remember{
+				position: relative;
+				margin-top: 23px;
+				height: 14px;
+				p{
+					position: absolute;
+					top: 0;
+					left: 33px;
+					color: gray;
+					font-size: 14px;
+				}
+				.usecheck{
+					width: 14px;
+					height: 14px;
+					img{
+						width: 14px;
+						height: 14px;
+						top: 0;
+						left: 0;
+						z-index: 1;
+					}
+					#usecheck{
+						position: absolute;
+						display: none;
+						z-index: 2;
+					}
+				}
+			}
+			.loadbut{
+				position: relative;
+				margin-top: 43px;
+				height: 40px;
+				width: 170px;
+				.loadbutcon{
+					width: 170px;
+					height: 40px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					border-radius: 29px;
+					background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#F55785), to(#FB806C));/*谷歌*/
+					background: -ms-linear-gradient(left,#F55785,#FB806C);/* IE 10 */
+					background:-moz-linear-gradient(left,#F55785,#FB806C);/*火狐*/ 
+					background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#F55785), to(#FB806C));/* Safari 4-5, Chrome 1-9*/
+					background: -webkit-linear-gradient(left,#F55785,#FB806C);   /*Safari5.1 Chrome 10+*/
+					background: -o-linear-gradient(left,#F55785,#FB806C);  /*Opera 11.10+*/
+					p{
+						color: white;
+						font-size: 20px;
+						font-weight: 500;
+					}
+				}
+				.loadbutcon:hover{
+					background: rgb(77,147,252);
+				}
+			}
+			#reg{
+				position: absolute;
+				top: 365px;
+				left: 240px;
+			}
+		}
+	}
+}
+.shadow{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 999;
+	background-color: rgba(128,128,128,0.6);
+	display: none;
+	.xgbox{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-left: -250px;
+		margin-top: -50px;
+		width: 500px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		p{
+			font-size: 40px;
+		}
+		.chacha{
+			position: absolute;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+			font-size: 20px;
+		}
+	}
+}

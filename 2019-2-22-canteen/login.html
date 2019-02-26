@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>home</title>
+		<link rel="stylesheet" type="text/css" href="less/reset.css" />
+		<link rel="stylesheet" type="text/css" href="less/home.css" />
+	</head>
+	<body>
+		<div class="shadow">
+			<div class="xgbox">
+				<p>用户名或密码不能为空</p>
+				<div class="chacha">
+					X
+				</div>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="landing">
+				<div class="landing-con">
+					<p>校园食堂后台管理平台</p>
+					
+					<div class="usename">
+						<img src="img/矢量智能对象.png">
+						<input type="text" id="usename" placeholder="请输入管理员姓名" />
+					</div>
+					
+					<div class="usecode">
+						<img src="img/矢量智能对象.jpg">
+						<input type="password" id="usecode" placeholder="请输入登录密码" />
+					</div>
+					
+					<div class="remember">
+						<div class="usecheck">
+							<img src="img/矩形4.jpg">
+                            <img src="img/矢量智能对象拷贝2.png" id="usecheck">
+						</div>
+						<p>记住用户名</p>
+					</div>
+					<div class="loadbut">
+						<div class="loadbutcon" id="log">
+							<p>登录</p>
+						</div>
+					</div>
+					<div class="loadbut" id="reg">
+						<div class="loadbutcon" id="regster">
+							<p>注册</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+
+			var userName = /^(\w|[\u4e00-\u9fa5]){1,14}$/;
+			var reg = /^[^\u4e00-\u9fa5]\S{6,14}$/;
+			$("#usename").blur(function() {
+				if (!userName.test($(this).val())&&$(this).val()!==""){
+					alert(("请输入正确的用户名"));
+					$(this).val("")
+				}
+			});
+			$("#usecode").blur(function(){
+				if (!reg.test($(this).val())&&$(this).val()!==""){
+					alert(("请输入正确的注册密码"));
+					$(this).val("")
+				}
+			});
+				// 登入
+				$("#log").click(function(){
+					if($("#usename").val()!=="" && $("#usecode").val()!=="") {
+						$.ajax({
+							url: 'http://101.132.40.198:8181/login',
+							type: 'post',
+							data: {
+								username: document.getElementById('usename').value,
+								password: document.getElementById('usecode').value,
+							},
+							success: function (data) {
+								console.log(JSON.parse(data));
+								console.log(JSON.parse(data).msg=="登录成功");
+								if(JSON.parse(data).msg == "登录成功"){
+									window.open("index.html","_self")
+								}
+
+							},
+							error: function (error, Msgerror) {
+							}
+						})
+
+
+					}
+				});
+				// 注册
+				$("#regster").click(function(){
+					if($("#usename").val()!=="" && $("#usecode").val()!=="") {
+						$.ajax({
+							url: 'http://101.132.40.198:8181/register',
+							type: 'post',
+							data: {
+								username: document.getElementById('usename').value,
+								password: document.getElementById('usecode').value,
+							},
+							success: function (data) {
+								console.log(JSON.parse(data));
+								// console.log(document.getElementById('usename').value);
+							},
+							error: function (error, Msgerror) {
+								console.log(Msgerror);
+							}
+						})
+					}
+				})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</script>
+	</body>
+</html>

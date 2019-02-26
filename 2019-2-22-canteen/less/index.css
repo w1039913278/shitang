@@ -1,0 +1,78 @@
+.layui-bg-black {
+  background: linear-gradient(#f76d77, #ff9b5b) !important;
+}
+.layui-bg-black > ul > li > a > cite {
+  font-size: 16px;
+}
+.layui-bg-black > ul > li > a > i {
+  font-size: 16px;
+}
+.layui-bg-black > ul > .layui-nav-item :hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+.layui-bg-black > ul > .back {
+  background: white;
+}
+.layui-bg-black > ul > .back > a > .colo {
+  color: #f76d77;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3821;
+}
+.header > .layui-nav {
+  background: white;
+}
+.header > .layui-nav > .layui-nav-item:hover .listcon {
+  display: block;
+}
+.header > .layui-nav > .layui-nav-item:hover .updown {
+  transform: rotateZ(180deg);
+}
+.header > .layui-nav > .layui-nav-item .updown {
+  width: 15px;
+  height: 10px;
+}
+.header > .layui-nav > .layui-nav-item > .listcon {
+  display: none;
+  position: absolute;
+  left: 70px;
+  top: 40px;
+  min-width: 50%;
+  line-height: 36px;
+  padding: 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  z-index: 100;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.header > .act {
+  display: block;
+}
+.header > p {
+  display: none;
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  line-height: 60px;
+  top: 0;
+  left: 50%;
+}
+.content > .cont {
+  top: 0 !important;
+  left: 0 !important;
+  height: 100%;
+  display: none;
+}
+.content > .show {
+  display: block;
+}
+/*# sourceMappingURL=index.css.map */

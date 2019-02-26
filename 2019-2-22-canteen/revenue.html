@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收支统计表</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="less/revenue.css">
+</head>
+<body>
+<section>
+    <div class="monthly">
+        <span>收支统月度记汇总表</span>
+        <select id="mouths">
+            <option >四月份</option>
+            <option >三月份</option>
+            <option >二月份</option>
+            <option >一月份</option>
+        </select>
+    </div>
+    <div id="mon_form">
+    </div>
+    <div class="year">
+        <span>收支统年度记汇总表</span>
+        <select id="years">
+            <option >2019</option>
+            <option >2018</option>
+            <option >2017</option>
+            <option >2016</option>
+        </select>
+    </div>
+    <div id="year_form">
+    </div>
+</section>
+<script src="js/mock-min.js"></script>
+<script src="js/json_prices.js"></script>
+<script src="layui/layui.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script src="js/revenue.js"></script>
+</body>
+</html>

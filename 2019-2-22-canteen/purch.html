@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日采购</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="less/purch.css">
+</head>
+<body>
+<section>
+    <div class="content_left">
+        <div class="con_top">
+            <div class="con_veg">
+                <ul>
+                    <li>蔬菜类</li>
+                    <li>累计36种</li>
+                    <li>总重486kg</li>
+                </ul>
+                <div id="section1"></div>
+            </div>
+            <div class="con_veg">
+                <ul>
+                    <li>肉禽类</li>
+                    <li>累计12种</li>
+                    <li>总重136kg</li>
+                </ul>
+                <div id="section2"></div>
+            </div>
+            <div class="con_veg">
+                <ul>
+                    <li>米面豆乳</li>
+                    <li>累计9种</li>
+                    <li>总重231kg</li>
+                </ul>
+                <div id="section3"></div>
+            </div>
+        </div>
+        <div class="con_bot">
+            <div class="sbtap">
+                <span>蔬菜详情</span>
+                <select class="month">
+                    <option>2019.10</option>
+                    <option>2019.9</option>
+                    <option>2019.8</option>
+                </select>
+            </div>
+            <div class="sblist">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>价格</th>
+                        <th>重量</th>
+                        <th>厂家</th>
+                    </tr>
+                    </thead>
+                    <tbody id="box">
+                    <!--<tr>-->
+                        <!--<td>韭菜</td>-->
+                        <!--<td>￥70.60</td>-->
+                        <!--<td>32.4kg</td>-->
+                        <!--<td>农机蔬菜厂</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>白菜</td>-->
+                        <!--<td>￥94.40</td>-->
+                        <!--<td>57.1kg</td>-->
+                        <!--<td>农机蔬菜厂</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>土豆</td>-->
+                        <!--<td>￥121.30</td>-->
+                        <!--<td>153.2kg</td>-->
+                        <!--<td>农贸菜市场</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>茄子</td>-->
+                        <!--<td>￥66.40</td>-->
+                        <!--<td>44.6kg</td>-->
+                        <!--<td>农机蔬菜厂</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>豆角</td>-->
+                        <!--<td>￥56.30</td>-->
+                        <!--<td>36.4kg</td>-->
+                        <!--<td>农贸菜市场</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>菜花</td>-->
+                        <!--<td>￥183.40</td>-->
+                        <!--<td>124.9kg</td>-->
+                        <!--<td>农机蔬菜厂</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="content_right">
+        <div id="kal">
+        </div>
+        <div class="examine">
+            <p>随机抽检新鲜率</p>
+            <div class="layui-elem-field layui-field-title" style="margin-top: 25px;">
+                <p>有害虫</p>
+            </div>
+            <div id="vermin" class="demo-slider"></div>
+            <div class="layui-elem-field layui-field-title" style="margin-top: 25px;">
+                <p>局部损坏枯萎</p>
+            </div>
+
+            <div id="die" class="demo-slider"></div>
+
+            <div class="layui-elem-field layui-field-title" style="margin-top: 25px;">
+                <p>局部损坏枯萎</p>
+            </div>
+            <div id="fresh" class="demo-slider"></div>
+        </div>
+    </div>
+</section>
+<script src="js/json_prices.js"></script>
+<script src="layui/layui.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script src="js/purch.js"></script>
+</body>
+</html>

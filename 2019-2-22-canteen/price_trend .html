@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="less/price_trend.css">
+    <link rel="stylesheet" href="less/reset.css">
+</head>
+<body>
+    <div class="bgbox">
+        <div class="babox_div1">
+            <div class="babox_div1_div1">
+                <ul>
+                    <li>
+                        <span>周</span>
+                        <select class="weeks">
+                        </select>
+                    </li>
+                    <li>
+                        月
+                        <select class="mouths">
+                        </select>
+                    </li>
+                    <li>
+                        年度
+                        <select class="years">
+                        </select>
+                    </li>
+                    <li>
+                        类型
+                        <select class="meuns">
+                        </select>
+                    </li>
+                </ul>
+                <div id="main"></div>
+            </div>
+            <div class="babox_div1_div2" >
+                <h2>蔬菜类所占比重</h2>
+                <div id="yztdiv"></div>
+            </div>
+            <div class="babox_div1_div3" >
+                <div>
+                    <h1>年度走势</h1>
+                    <select class="babox_div1_div3_se">
+                    </select>
+                    <div id="zxtbox"></div>
+                </div>
+            </div>
+            <div class="babox_div1_div4" >
+                <h2>不同时期对比</h2>
+                <select>
+                    <option value="上周">本周</option>
+                </select>
+                <div class="dbbox">
+                    <ul>
+                        <li>
+                            本周销量<br>
+                            <span>相比于上周销量</span>
+                            <p></p>
+                        </li>
+                        <li>
+                            本周支出<br>
+                            <span>相比于上周支出</span>
+                            <p style=" color: #5AAFEA"></p>
+                        </li>
+                        <li>
+                            本周成本<br>
+                            <span>相比于上周成本</span>
+                            <p style=" color: #F55486">-8%</p>
+                        </li>
+                        <li>
+                            本周利润<br>
+                            <span>相比于上周利润</span>
+                            <p style=" color: #36BEA4">+26400</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/mock-min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script src="js/json_prices.js"></script>
+<script src="js/price_trend.js"></script>
+</html>
